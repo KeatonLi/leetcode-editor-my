@@ -4,7 +4,7 @@ import java.util.PriorityQueue;
 
 class 合并 K 个升序链表{
 
-    public class ListNode {
+    private class ListNode {
         int val;
         ListNode next;
 
