@@ -1,9 +1,6 @@
 package leetcode.editor.cn;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 class 重复 K 次的最长子序列 {
 
@@ -27,6 +24,7 @@ class 重复 K 次的最长子序列 {
                 tmp.append(c.repeat(cnt[i] / k));
             }
             char[] a = tmp.toString().toCharArray();
+            System.out.println(Arrays.toString(a));
 
             ans = new char[a.length];
             permute(a, k, s);
